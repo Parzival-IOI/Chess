@@ -25,7 +25,7 @@ export const getTileColor = (rank: number, file: number): boolean => {
 }
 
 
-export const convertFen = (fen: string) => {
+export const convertFen = (fen: string): string[] => {
   return fen.split("/").map((rank: string) => {
     return rank.split("").map(char => {
       if(isCharNumber(char)) {
